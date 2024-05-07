@@ -5,5 +5,6 @@ console.log(2);
 function count() {
     var one = 5;
     var two = 10;
-    return one + two;
+    var three = 7;
+    return one + two + three;
 }
