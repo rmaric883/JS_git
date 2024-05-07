@@ -3,5 +3,7 @@ info();
 console.log(2);
 
 function count() {
-    return 7 + 15;
+    var one = 5;
+    var two = 10;
+    return one + two;
 }
