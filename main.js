@@ -1,10 +1,9 @@
-console.log(1);
-info();
-console.log(2);
-var robi = 'Robert';
-function count() {
-    var one = 5;
-    var two = 10;
-    var three = 7;
-    return one + two + three;
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw');
+    }
 }
+
+const circle = new Circle(1);
+console.log(circle)
