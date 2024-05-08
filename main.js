@@ -1,9 +1,16 @@
-function Circle(radius) {
-    this.radius = radius;
-    this.draw = function() {
-        console.log('draw');
+const person = {
+    firstName: 'Ante',
+    lastName: 'Štabi',
+    get fullName() {
+        return `${person.firstName} ${person.lastName}`
+    },
+    set fullName(value) {
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
     }
 }
 
-const circle = new Circle(1);
-console.log(circle)
+person.fullName = 'John Smith'
+
+console.log(person);
